@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="about-me.scss" />
     <title>Document</title>
   </head>
 
@@ -32,8 +32,8 @@
               />
             </svg>
             <div class="navbar-links">
-              <a class="navbar-link" href="#my-info">Início</a>
-              <a class="navbar-link" href="#about-me">Sobre mim</a>
+              <a class="navbar-link" href="">Início</a>
+              <a class="navbar-link" href="">Sobre mim</a>
               <a class="navbar-link" href="">Contato</a>
             </div>
             <button class="burger-button">
@@ -55,38 +55,13 @@
             </button>
           </div>
         </nav>
-        <div class="my-info" id="my-info">
-          <h1 class="my-info-title">
-            Sou <span class="my-info-title-name">João Pedro Bretanha</span>
-          </h1>
-          <div class="my-info-buttons">
-            <button class="button button__solid">Entrar em contato</button>
-            <button class="button button__outlined">
-              <svg
-                width="14"
-                height="16"
-                viewBox="0 0 14 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 15C-2.41411e-08 14.4477 0.447715 14 1 14H13C13.5523 14 14 14.4477 14 15C14 15.5523 13.5523 16 13 16H1C0.447715 16 2.41411e-08 15.5523 0 15ZM3.29289 7.29289C3.68342 6.90237 4.31658 6.90237 4.70711 7.29289L6 8.58579L6 1C6 0.447716 6.44771 2.41411e-08 7 0C7.55228 -2.41411e-08 8 0.447715 8 1L8 8.58579L9.29289 7.29289C9.68342 6.90237 10.3166 6.90237 10.7071 7.29289C11.0976 7.68342 11.0976 8.31658 10.7071 8.70711L7.70711 11.7071C7.51957 11.8946 7.26522 12 7 12C6.73478 12 6.48043 11.8946 6.29289 11.7071L3.29289 8.70711C2.90237 8.31658 2.90237 7.68342 3.29289 7.29289Z"
-                  fill="white"
-                />
-              </svg>
-              <span class="button-text button-text__mr-left">Baixar CV</span>
-            </button>
-          </div>
-        </div>
       </header>
-      <section class="about" id="about-me">
-        <div class="about-card">
-          <img class="about-card-image" src="./images/perfil.jfif" alt="" />
-          <div>
-            <h2 class="about-card-title">Sobre mim</h2>
-            <p class="about-card-description">
+      <section class="aboutme">
+        <img class="aboutme-image" src="./images/perfil.jfif" alt="" />
+        <div class="aboutme-text">
+          <h1 class="aboutme-text-title">João Pedro Bretanha</h1>
+          <div class="aboutme-text-description">
+            <p class="aboutme-text-description-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
               fringilla leo ex quis nisi. Etiam nec varius leo, vitae vehicula
@@ -94,33 +69,195 @@
               pretium. Phasellus semper, magna quis porttitor mollis, nisl augue
               condimentum est, eget porta nisi eros eget turpis. Aliquam
               facilisis rutrum mi, vel pretium arcu aliquam in. Cras et tellus
-              consectetur, suscipit augue in, mattis risus.
+              consectetur, suscipit augue in, mattis risus. Aliquam cursus arcu
+              eu efficitur congue. Nullam turpis turpis, porttitor eu odio a,
+              ullamcorper ullamcorper mauris. Integer a tortor non ex bibendum.
+              Cras et tellus consectetur, suscipit augue in, mattis risus.
+              Aliquam cursus arcu eu efficitur congue. Nullam turpis turpis,
+              porttitor eu odio a, ullamcorper ullamcorper mauris. Integer a
+              tortor non ex bibendum.Cras et tellus consectetur, suscipit augue
+              in, mattis risus. Aliquam cursus arcu eu efficitur congue. Nullam
+              turpis turpis, porttitor eu odio.
             </p>
-            <a class="link" href="./about-me.html">
-              <button class="button button__outlined">
-                <span class="button-text button-text__mr-right"
-                  >Mais sobre mim</span
-                >
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.16667 2.91663L12.25 6.99996M12.25 6.99996L8.16667 11.0833M12.25 6.99996L1.75 6.99996"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </a>
+
+            <div class="aboutme-text-description-email">
+              <a class="link" href="mailto:meu.email@gmail.com"
+                >meu.email@gmail.com</a
+              >
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="habilidades">
+        <h3 class="habilidades-title">Minhas habilidades</h3>
+        <div class="habilidades-cardgroup">
+          <div class="habilidades-cardgroup-card">
+            <svg
+              class="habilidades-cardgroup-card-icon"
+              width="28"
+              height="42"
+              viewBox="0 0 28 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 33.5H14.0208M5.66667 39.75H22.3333C24.6345 39.75 26.5 37.8845 26.5 35.5833V6.41667C26.5 4.11548 24.6345 2.25 22.3333 2.25H5.66667C3.36548 2.25 1.5 4.11548 1.5 6.41667V35.5833C1.5 37.8845 3.36548 39.75 5.66667 39.75Z"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h3 class="habilidades-cardgroup-card-title">Responsive design</h3>
+            <p class="habilidades-cardgroup-card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
+              fringilla leo ex quis nisi.
+            </p>
+          </div>
+          <div class="habilidades-cardgroup-card">
+            <svg
+              class="habilidades-cardgroup-card-icon"
+              width="46"
+              height="38"
+              viewBox="0 0 46 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.8334 35.6667L27.1667 2.33333M35.5 10.6667L43.8334 19L35.5 27.3333M10.5 27.3333L2.16669 19L10.5 10.6667"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3 class="habilidades-cardgroup-card-title">HTML, CSS e JS</h3>
+            <p class="habilidades-cardgroup-card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
+              fringilla leo ex quis nisi.
+            </p>
+          </div>
+          <div class="habilidades-cardgroup-card">
+            <svg
+              class="habilidades-cardgroup-card-icon"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M33.5 14.75V21M33.5 21V27.25M33.5 21H39.75M33.5 21H27.25M23.0833 10.5833C23.0833 15.1857 19.3524 18.9167 14.75 18.9167C10.1476 18.9167 6.41667 15.1857 6.41667 10.5833C6.41667 5.98096 10.1476 2.25 14.75 2.25C19.3524 2.25 23.0833 5.98096 23.0833 10.5833ZM2.25 37.6667C2.25 30.7631 7.84644 25.1667 14.75 25.1667C21.6536 25.1667 27.25 30.7631 27.25 37.6667V39.75H2.25V37.6667Z"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3 class="habilidades-cardgroup-card-title">Cooworking</h3>
+            <p class="habilidades-cardgroup-card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
+              fringilla leo ex quis nisi.
+            </p>
+          </div>
+          <div class="habilidades-cardgroup-card">
+            <svg
+              class="habilidades-cardgroup-card-icon"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.9167 8.25455V36.0837C18.9167 38.1085 17.2752 39.75 15.2504 39.75C13.7009 39.75 12.3188 38.776 11.7977 37.3168L7.32599 24.506M33.5 23.0833C36.9518 23.0833 39.75 20.2851 39.75 16.8333C39.75 13.3816 36.9518 10.5833 33.5 10.5833M7.32599 24.506C4.34229 23.2377 2.25 20.2799 2.25 16.8333C2.25 12.231 5.98095 8.5 10.5833 8.5H14.4002C22.9432 8.5 30.2852 5.92897 33.5 2.25L33.5 31.4167C30.2852 27.7377 22.9432 25.1667 14.4002 25.1667L10.5833 25.1666C9.42746 25.1666 8.3266 24.9313 7.32599 24.506Z"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3 class="habilidades-cardgroup-card-title">Comunicação</h3>
+            <p class="habilidades-cardgroup-card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
+              fringilla leo ex quis nisi.
+            </p>
+          </div>
+          <div class="habilidades-cardgroup-card">
+            <svg
+              class="habilidades-cardgroup-card-icon"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.33331 4.41665C2.33331 3.26605 3.26605 2.33331 4.41665 2.33331H33.5833C34.7339 2.33331 35.6666 3.26605 35.6666 4.41665V8.58331C35.6666 9.73391 34.7339 10.6666 33.5833 10.6666H4.41665C3.26605 10.6666 2.33331 9.73391 2.33331 8.58331V4.41665Z"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.33331 21.0833C2.33331 19.9327 3.26605 19 4.41665 19H16.9166C18.0672 19 19 19.9327 19 21.0833V33.5833C19 34.7339 18.0672 35.6666 16.9166 35.6666H4.41665C3.26605 35.6666 2.33331 34.7339 2.33331 33.5833V21.0833Z"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M27.3333 21.0833C27.3333 19.9327 28.266 19 29.4166 19H33.5833C34.7339 19 35.6666 19.9327 35.6666 21.0833V33.5833C35.6666 34.7339 34.7339 35.6666 33.5833 35.6666H29.4166C28.266 35.6666 27.3333 34.7339 27.3333 33.5833V21.0833Z"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3 class="habilidades-cardgroup-card-title">Pixel perfect</h3>
+            <p class="habilidades-cardgroup-card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
+              fringilla leo ex quis nisi.
+            </p>
+          </div>
+          <div class="habilidades-cardgroup-card">
+            <svg
+              class="habilidades-cardgroup-card-icon"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35.5833 18.9167H6.41667M35.5833 18.9167C37.8845 18.9167 39.75 20.7821 39.75 23.0833V35.5833C39.75 37.8845 37.8845 39.75 35.5833 39.75H6.41667C4.11548 39.75 2.25 37.8845 2.25 35.5833V23.0833C2.25 20.7821 4.11548 18.9167 6.41667 18.9167M35.5833 18.9167V14.75C35.5833 12.4488 33.7179 10.5833 31.4167 10.5833M6.41667 18.9167V14.75C6.41667 12.4488 8.28215 10.5833 10.5833 10.5833M10.5833 10.5833V6.41667C10.5833 4.11548 12.4488 2.25 14.75 2.25H27.25C29.5512 2.25 31.4167 4.11548 31.4167 6.41667V10.5833M10.5833 10.5833H31.4167"
+                stroke="#A0A0A1"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3 class="habilidades-cardgroup-card-title">Interação</h3>
+            <p class="habilidades-cardgroup-card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim, nibh non laoreet volutpat, mi nisi molestie arcu, at
+              fringilla leo ex quis nisi.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <footer class="footer">
         <div class="container footer__border">
           <div class="footer-content">
@@ -138,7 +275,7 @@
             </svg>
             <div class="footer-column">
               <p class="footer-column-name">Início</p>
-              <a class="footer-column-link" href="#about-me">Sobre mim</a>
+              <a class="footer-column-link" href="#">Sobre mim</a>
             </div>
             <div class="footer-column">
               <p class="footer-column-name">Contato</p>
