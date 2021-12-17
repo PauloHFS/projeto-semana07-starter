@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/index.scss" />
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/mobile-navbar.js"></script>
 
     <title>Portifólio</title>
   </head>
@@ -35,9 +36,9 @@
               />
             </svg>
             <div class="navbar-links">
-              <a class="navbar-link" href="#my-info">Início</a>
-              <a class="navbar-link" href="#about-me">Sobre mim</a>
-              <a class="navbar-link" href="">Contato</a>
+              <a class="navbar-link" href="./index.html">Início</a>
+              <a class="navbar-link" href="./about-me.html">Sobre mim</a>
+              <a class="navbar-link" href="./contato.html">Contato</a>
             </div>
             <button class="burger-button">
               <svg
@@ -56,8 +57,32 @@
                 />
               </svg>
             </button>
+            <button class="close-button">
+              <svg
+                width="14"
+                height="16"
+                viewBox="0 0 14 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 2.12305L13 14.123L10.5 11.623L8 9.12305M1 14.123L13 1.87695"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </nav>
+
+        <div class="mobile-navbar">
+          <a href="./index.html" class="mobile-navbar-link">Inicio</a>
+          <a href="./about-me.html" class="mobile-navbar-link">Sobre mim</a>
+          <a href="./contato.html" class="mobile-navbar-link">Contato</a>
+        </div>
+
         <div class="my-info" id="my-info">
           <h1 class="my-info-title">
             Sou <span class="my-info-title-name">João Pedro Bretanha</span>

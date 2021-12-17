@@ -1,8 +1,5 @@
 window.onload = () => {
-  const buttonContato = document.querySelector('.button__solid');
-
-  buttonContato.addEventListener(
-    'click',
-    () => (location.href = '../contato.html')
-  );
+  document
+    .querySelector('.button__solid')
+    .addEventListener('click', () => (location.href = '../contato.html'));
 };
