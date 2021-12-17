@@ -1,18 +1,27 @@
 window.onload = () => {
-  const buttonEnviar = document.querySelector('.button');
+  const burger_button = document.querySelector('.burger-button');
+  const close_button = document.querySelector('.close-button');
 
-  buttonEnviar.addEventListener('click', event => {
-    event.preventDefault();
+  const mobile_navbar = document.querySelector('.mobile-navbar');
 
-    const [nameInput, emailInput, mensageInput] =
-      document.querySelectorAll('.input');
+  burger_button.addEventListener('click', () => {
+    burger_button.style.display = 'none';
+    close_button.style.display = 'block';
 
-    const body = {
-      [nameInput.name]: nameInput.value,
-      [emailInput.name]: emailInput.value,
-      [mensageInput.name]: mensageInput.value,
-    };
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = 'no';
 
-    alert(JSON.stringify(body));
+    // mobile_navbar.style.display = 'flex';
+    mobile_navbar.style.cssText = 'display:flex;flex-direction:column;';
+  });
+
+  close_button.addEventListener('click', () => {
+    burger_button.style.display = 'block';
+    close_button.style.display = 'none';
+
+    document.documentElement.style.overflow = 'auto';
+    document.body.scroll = 'yes';
+
+    mobile_navbar.style.display = 'none';
   });
 };
