@@ -39,7 +39,5 @@ window.onload = () => {
     };
 
     alert(JSON.stringify(body));
-
-    location.href = './index.js';
   });
 };
