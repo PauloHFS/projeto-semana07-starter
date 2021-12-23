@@ -22,6 +22,10 @@ button {
     display: none;
   }
 
+  .close-button {
+    display: none;
+  }
+
   @media (min-width: 992px) {
     &-links {
       display: flex;
@@ -48,6 +52,36 @@ button {
         }
       }
     }
+  }
+}
+
+.mobile-navbar {
+  height: 100%;
+
+  margin-top: 61px;
+
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+
+  background-color: $backgroundColor;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+
+  &-link {
+    padding-top: 28.5px;
+    padding-left: 16px;
+
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -161,6 +195,10 @@ button {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .link {
